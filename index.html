@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,17 +20,22 @@
     <header class="fixed w-full bg-black/90 backdrop-blur-md z-50" x-data="{ isOpen: false }">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold tracking-tighter">GP</a>
-                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
+                <a href="https://graemeph-alt.github.io/graeme-phillips-2025-01-26-900v9" class="text-2xl font-bold tracking-tighter hover:text-blue-400 transition-all duration-300">GP</a>
+                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none hover:text-blue-400 transition-all duration-300">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
                     </svg>
                 </button>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a>
-                    <a href="#work" class="hover:text-blue-400 transition-colors duration-300">Work</a>
-                    <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
+                    <a href="#about" class="hover:text-blue-400 transition-all duration-300 hover:scale-105">About</a>
+                    <a href="#work" class="hover:text-blue-400 transition-all duration-300 hover:scale-105">Work</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-all duration-300 hover:scale-105">Contact</a>
                 </div>
+            </div>
+            <div x-show="isOpen" class="md:hidden mt-4">
+                <a href="#about" class="block py-2 hover:text-blue-400 transition-all duration-300">About</a>
+                <a href="#work" class="block py-2 hover:text-blue-400 transition-all duration-300">Work</a>
+                <a href="#contact" class="block py-2 hover:text-blue-400 transition-all duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -36,49 +49,103 @@
             <div class="container mx-auto relative z-10 text-center">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">Graeme Phillips</h1>
                 <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed text-gray-300 mb-12">
-                    I'm Graeme Phillips, an astrophotographer driven by a passion for unveiling the beauty of the night sky. With every shot, I aim to bring the cosmos closer, sharing the awe-inspiring splendor of stars, galaxies, and nebulae.
+                    I'm Graeme Phillips, an award-winning astrophotographer with over a decade of experience capturing the mysteries of the cosmos. Using cutting-edge equipment and innovative techniques, I transform the raw beauty of celestial objects into breathtaking works of art that connect viewers with the infinite wonders above.
                 </p>
-                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 transform">
-                    Explore My Universe
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 transform hover:shadow-lg hover:shadow-blue-500/50">
+                    Begin Your Cosmic Journey
                 </a>
             </div>
         </section>
 
-        <section class="py-24 px-6 bg-gray-900">
-            <div class="container mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Drives Me</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Passion for the Night Sky</h3>
-                        <p class="text-gray-400">Dedicated to capturing the mysterious beauty of celestial objects through advanced astrophotography techniques.</p>
-                    </div>
-                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Inspiring Connections</h3>
-                        <p class="text-gray-400">Creating bridges between earthbound observers and the vast cosmos through compelling imagery.</p>
-                    </div>
-                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Storytelling Through Stars</h3>
-                        <p class="text-gray-400">Each image tells a unique story of our universe, bringing cosmic narratives to life.</p>
-                    </div>
+        <section id="about" class="py-24 px-6 bg-gray-900">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Story</h2>
+                <div class="space-y-8 text-gray-300">
+                    <p class="leading-relaxed">
+                        Founded in 2012, our journey began when I discovered the transformative power of astrophotography during a chance encounter with a meteor shower in the Australian outback. What started as a personal passion project has evolved into a professional pursuit of capturing the universe's most spectacular phenomena, from distant galaxies to nebulous star-forming regions.
+                    </p>
+                    <p class="leading-relaxed">
+                        Our mission is to bridge the gap between Earth and the cosmos, making the wonders of space accessible to everyone through stunning imagery. We believe in the power of astrophotography to inspire scientific curiosity, environmental awareness, and a deeper appreciation for our place in the universe. Our core values of innovation, precision, and artistic excellence guide every project we undertake.
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="py-24 px-6 bg-black">
             <div class="container mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What You Get</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Drives Me</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="p-8 border border-gray-800 rounded-2xl hover:border-blue-500 transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Personalized Art for Your Space</h3>
-                        <p class="text-gray-400">Custom astrophotography pieces designed to perfectly complement your environment.</p>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
+                        <h3 class="text-xl font-semibold mb-4">Technical Excellence</h3>
+                        <p class="text-gray-400">Utilizing state-of-the-art equipment and advanced processing techniques to capture the faintest details of deep-sky objects with unprecedented clarity.</p>
                     </div>
-                    <div class="p-8 border border-gray-800 rounded-2xl hover:border-blue-500 transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Educational Insight</h3>
-                        <p class="text-gray-400">Learn about the cosmos through detailed explanations of each celestial capture.</p>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
+                        <h3 class="text-xl font-semibold mb-4">Artistic Vision</h3>
+                        <p class="text-gray-400">Combining scientific accuracy with artistic interpretation to create images that not only document celestial objects but evoke emotion and wonder.</p>
                     </div>
-                    <div class="p-8 border border-gray-800 rounded-2xl hover:border-blue-500 transition-all duration-300">
-                        <h3 class="text-xl font-semibold mb-4">Customized Projects</h3>
-                        <p class="text-gray-400">Tailored astrophotography projects meeting your specific requirements and vision.</p>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
+                        <h3 class="text-xl font-semibold mb-4">Educational Impact</h3>
+                        <p class="text-gray-400">Sharing knowledge and inspiring the next generation of astronomers through workshops, presentations, and detailed documentation of imaging techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 bg-gray-900">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Client Testimonials</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-8 rounded-2xl bg-gray-800/50 hover:transform hover:scale-102 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                        <p class="text-gray-300 mb-4">"Graeme's attention to detail and technical expertise are unmatched. The Andromeda Galaxy print he created for our observatory has become a centerpiece that never fails to amaze visitors."</p>
+                        <p class="font-semibold">Dr. Sarah Chen</p>
+                        <p class="text-sm text-gray-400">Director, Pacific Astronomy Institute</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 hover:transform hover:scale-102 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                        <p class="text-gray-300 mb-4">"Working with Graeme was an incredible experience. His knowledge of astrophotography and patience in explaining complex concepts made our collaboration truly special."</p>
+                        <p class="font-semibold">Michael Rodriguez</p>
+                        <p class="text-sm text-gray-400">Space Science Educator</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 hover:transform hover:scale-102 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                        <p class="text-gray-300 mb-4">"The custom nebula series Graeme created for our corporate headquarters has transformed our space and inspired countless conversations about science and exploration."</p>
+                        <p class="font-semibold">Emma Thompson</p>
+                        <p class="text-sm text-gray-400">Creative Director, Stellar Industries</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 hover:transform hover:scale-102 transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">★★★★★</div>
+                        <p class="text-gray-300 mb-4">"The level of detail in Graeme's work is astounding. Each image reveals new details every time you look at it. Truly museum-quality work."</p>
+                        <p class="font-semibold">James Wilson</p>
+                        <p class="text-sm text-gray-400">Curator, Modern Space Gallery</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 bg-black">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div class="p-6 rounded-lg bg-gray-800/50 hover:bg-gray-800/70 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">What equipment do you use for your astrophotography?</h3>
+                        <p class="text-gray-400">I use professional-grade telescopes, including a 14" Celestron EdgeHD and various specialized cameras optimized for deep-sky imaging. Each project may require different equipment based on the specific celestial object and desired outcome.</p>
+                    </div>
+                    <div class="p-6 rounded-lg bg-gray-800/50 hover:bg-gray-800/70 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">How long does a typical project take?</h3>
+                        <p class="text-gray-400">Most projects take 2-4 weeks from initial capture to final processing. Complex deep-sky objects may require multiple imaging sessions to capture all necessary details.</p>
+                    </div>
+                    <div class="p-6 rounded-lg bg-gray-800/50 hover:bg-gray-800/70 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Do you offer workshops or training sessions?</h3>
+                        <p class="text-gray-400">Yes, I regularly conduct both online and in-person workshops for beginners and advanced astrophotographers. These sessions cover equipment selection, imaging techniques, and post-processing methods.</p>
+                    </div>
+                    <div class="p-6 rounded-lg bg-gray-800/50 hover:bg-gray-800/70 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">What print options are available?</h3>
+                        <p class="text-gray-400">I offer various high-quality print options including metal prints, acrylic mounts, and traditional fine art papers. Each medium is carefully selected to enhance the specific characteristics of each image.</p>
+                    </div>
+                    <div class="p-6 rounded-lg bg-gray-800/50 hover:bg-gray-800/70 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-3">Can you capture specific celestial events or objects?</h3>
+                        <p class="text-gray-400">Yes, I accept custom commissions for specific celestial objects or events. Planning is essential as some objects are only visible during certain seasons or require specific atmospheric conditions.</p>
                     </div>
                 </div>
             </div>
@@ -87,9 +154,9 @@
         <section id="contact" class="py-24 px-6 bg-gray-900">
             <div class="container mx-auto max-w-4xl text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">Let's Connect</h2>
-                <p class="text-xl text-gray-400 mb-12">Ready to explore the cosmos together? Reach out to discuss your project.</p>
-                <a href="mailto:graeme@graemephillips.info" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 transform">
-                    Contact Me
+                <p class="text-xl text-gray-400 mb-12">Ready to bring the cosmos into your space? Contact me to discuss your vision and create something truly extraordinary.</p>
+                <a href="mailto:graeme@graemephillips.info" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 transform hover:shadow-lg hover:shadow-blue-500/50">
+                    Start Your Cosmic Journey
                 </a>
             </div>
         </section>
@@ -100,11 +167,13 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 mb-4 md:mb-0">&copy; 2024 Graeme Phillips. All rights reserved.</p>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+                    <a href="https://graemeph-alt.github.io/graeme-phillips-2025-01-26-900v9/privacy.html" class="text-gray-500 hover:text-blue-400 transition-all duration-300">Privacy Policy</a>
+                    <a href="https://graemeph-alt.github.io/graeme-phillips-2025-01-26-900v9/terms.html" class="text-gray-500 hover:text-blue-400 transition-all duration-300">Terms of Service</a>
+                    <a href="https://graemeph-alt.github.io/graeme-phillips-2025-01-26-900v9/blog.html" class="text-gray-500 hover:text-blue-400 transition-all duration-300">Blog</a>
                 </div>
             </div>
         </div>
     </footer>
+</body>
 </body>
 </html>

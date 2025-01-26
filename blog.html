@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Guide to Astrophotography: From Beginner to Advanced | Graeme Phillips</title>
+    <meta name="description" content="Master the art of astrophotography with this comprehensive guide covering equipment, techniques, and post-processing tips from professional astrophotographer Graeme Phillips.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-black text-gray-100 font-sans antialiased">
+    <header class="fixed w-full bg-black/90 backdrop-blur-md z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold tracking-tighter">GP</a>
+                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a>
+                    <a href="#work" class="hover:text-blue-400 transition-colors duration-300">Work</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <article class="container mx-auto px-6 max-w-4xl">
+            <header class="mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">The Complete Guide to Astrophotography: From First Steps to Master Shots</h1>
+                <div class="flex items-center text-gray-400 mb-8">
+                    <time datetime="2024-02-15">February 15, 2024</time>
+                    <span class="mx-2">•</span>
+                    <span>15 min read</span>
+                </div>
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Starry night sky with Milky Way galaxy" class="w-full h-[500px] object-cover rounded-xl mb-8">
+            </header>
+
+            <div class="prose prose-lg prose-invert max-w-none">
+                <p class="text-xl leading-relaxed mb-8">Astrophotography combines the technical precision of photography with the boundless wonder of astronomy. As a professional astrophotographer with over a decade of experience, I've created this comprehensive guide to help you navigate the fascinating world of capturing the night sky.</p>
+
+                <h2 class="text-2xl font-bold mt-12 mb-6">Essential Equipment for Astrophotography</h2>
+                <p class="mb-6">The foundation of successful astrophotography lies in having the right equipment. While you can start with basic gear, understanding the essential tools will help you make informed decisions as you progress:</p>
+                
+                <ul class="list-disc pl-6 mb-8">
+                    <li class="mb-3"><strong>Camera:</strong> A DSLR or mirrorless camera with good high-ISO performance is crucial. Full-frame sensors offer better light gathering capabilities, but crop sensors can still produce excellent results.</li>
+                    <li class="mb-3"><strong>Lenses:</strong> Start with a wide-angle lens (14-35mm) for landscape astrophotography. Fast lenses (f/2.8 or wider) are preferred for gathering more light.</li>
+                    <li class="mb-3"><strong>Tripod:</strong> A sturdy tripod is non-negotiable. Look for one that can support your equipment weight and remain stable in varying conditions.</li>
+                    <li class="mb-3"><strong>Mount:</strong> For deep-sky imaging, an equatorial mount is essential to counter Earth's rotation.</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-12 mb-6">Understanding Camera Settings</h2>
+                <p class="mb-6">Mastering your camera settings is crucial for capturing clear, detailed images of the night sky:</p>
+
+                <div class="bg-gray-900 p-6 rounded-lg mb-8">
+                    <h3 class="text-xl font-semibold mb-4">Recommended Starting Settings</h3>
+                    <ul class="space-y-3">
+                        <li>• ISO: 1600-3200 (depending on light pollution)</li>
+                        <li>• Aperture: Widest possible (f/2.8 or lower)</li>
+                        <li>• Shutter Speed: 15-30 seconds for wide-angle shots</li>
+                        <li>• Focus: Manual, set to infinity</li>
+                        <li>• File Format: RAW for maximum editing flexibility</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-12 mb-6">Planning Your Shot</h2>
+                <p class="mb-6">Successful astrophotography requires careful planning and consideration of several factors:</p>
+
+                <ol class="list-decimal pl-6 mb-8">
+                    <li class="mb-4"><strong>Location Scouting:</strong> Find dark sky areas away from light pollution. Use dark sky maps and apps to locate optimal shooting locations.</li>
+                    <li class="mb-4"><strong>Weather Conditions:</strong> Clear skies are essential. Monitor cloud cover, humidity, and atmospheric stability.</li>
+                    <li class="mb-4"><strong>Moon Phases:</strong> New moon periods offer the darkest skies for deep-sky imaging.</li>
+                    <li class="mb-4"><strong>Seasonal Objects:</strong> Different celestial objects are visible during different seasons. Plan accordingly.</li>
+                </ol>
+
+                <h2 class="text-2xl font-bold mt-12 mb-6">Advanced Techniques</h2>
+                <p class="mb-8">As you progress in your astrophotography journey, these advanced techniques will help you capture more detailed and impressive images:</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Stacking</h3>
+                        <p>Combine multiple exposures to reduce noise and increase detail. Use specialized software like DeepSkyStacker or Sequator.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Tracking</h3>
+                        <p>Use an equatorial mount to track the sky's movement, allowing for longer exposures without star trails.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-12 mb-6">Post-Processing Workflow</h2>
+                <p class="mb-6">Post-processing is where your images truly come to life. Here's a basic workflow:</p>
+
+                <ol class="list-decimal pl-6 mb-8">
+                    <li class="mb-4">Raw file conversion and basic adjustments</li>
+                    <li class="mb-4">Noise reduction and star enhancement</li>
+                    <li class="mb-4">Color balance and saturation adjustment</li>
+                    <li class="mb-4">Local adjustments for nebulosity and detail</li>
+                    <li class="mb-4">Final sharpening and export</li>
+                </ol>
+
+                <h2 class="text-2xl font-bold mt-12 mb-6">Common Challenges and Solutions</h2>
+                <p class="mb-6">Every astrophotographer faces challenges. Here are solutions to common issues:</p>
+
+                <div class="bg-gray-900 p-6 rounded-lg mb-12">
+                    <ul class="space-y-4">
+                        <li><strong>Star Trails:</strong> Use the 500 rule or invest in a tracking mount</li>
+                        <li><strong>Focus Issues:</strong> Use live view magnification and focus on bright stars</li>
+                        <li><strong>Light Pollution:</strong> Use light pollution filters or shoot during new moon</li>
+                        <li><strong>Noise:</strong> Implement image stacking and proper noise reduction techniques</li>
+                    </ul>
+                </div>
+
+                <h2 class="text-2xl font-bold mt-12 mb-6">Conclusion</h2>
+                <p class="mb-8">Astrophotography is a rewarding pursuit that combines technical skill with artistic vision. Start with the basics, practice regularly, and gradually incorporate advanced techniques as you grow more comfortable. Remember that every experienced astrophotographer started as a beginner, and persistence is key to improvement.</p>
+
+                <div class="border-t border-gray-800 pt-8 mt-12">
+                    <p class="italic text-gray-400">Want to learn more about astrophotography or discuss your specific challenges? Feel free to reach out through my contact form below.</p>
+                </div>
+            </div>
+        </article>
+
+        <section id="contact" class="py-24 px-6 bg-gray-900 mt-24">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Let's Connect</h2>
+                <p class="text-xl text-gray-400 mb-12">Ready to explore the cosmos together? Reach out to discuss your project.</p>
+                <a href="mailto:graeme@graemephillips.info" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 transform">
+                    Contact Me
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-12 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">&copy; 2024 Graeme Phillips. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

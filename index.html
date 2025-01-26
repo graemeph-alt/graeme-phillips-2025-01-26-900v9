@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graeme Phillips - Astrophotography</title>
+    <meta name="description" content="Discover the beauty of the night sky through the lens of Graeme Phillips, professional astrophotographer.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-black text-gray-100 font-sans antialiased">
+    <header class="fixed w-full bg-black/90 backdrop-blur-md z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold tracking-tighter">GP</a>
+                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a>
+                    <a href="#work" class="hover:text-blue-400 transition-colors duration-300">Work</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="min-h-screen flex items-center justify-center relative overflow-hidden py-24 px-6">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-b from-black via-black/90 to-black"></div>
+                <img src="https://images.unsplash.com/photo-1539721972319-f0e80a00d424" alt="Night sky" class="w-full h-full object-cover opacity-40">
+            </div>
+            <div class="container mx-auto relative z-10 text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight">Graeme Phillips</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed text-gray-300 mb-12">
+                    I'm Graeme Phillips, an astrophotographer driven by a passion for unveiling the beauty of the night sky. With every shot, I aim to bring the cosmos closer, sharing the awe-inspiring splendor of stars, galaxies, and nebulae.
+                </p>
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 transform">
+                    Explore My Universe
+                </a>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 bg-gray-900">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Drives Me</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Passion for the Night Sky</h3>
+                        <p class="text-gray-400">Dedicated to capturing the mysterious beauty of celestial objects through advanced astrophotography techniques.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Inspiring Connections</h3>
+                        <p class="text-gray-400">Creating bridges between earthbound observers and the vast cosmos through compelling imagery.</p>
+                    </div>
+                    <div class="p-8 rounded-2xl bg-gray-800/50 backdrop-blur-lg hover:transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Storytelling Through Stars</h3>
+                        <p class="text-gray-400">Each image tells a unique story of our universe, bringing cosmic narratives to life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 bg-black">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What You Get</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="p-8 border border-gray-800 rounded-2xl hover:border-blue-500 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Personalized Art for Your Space</h3>
+                        <p class="text-gray-400">Custom astrophotography pieces designed to perfectly complement your environment.</p>
+                    </div>
+                    <div class="p-8 border border-gray-800 rounded-2xl hover:border-blue-500 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Educational Insight</h3>
+                        <p class="text-gray-400">Learn about the cosmos through detailed explanations of each celestial capture.</p>
+                    </div>
+                    <div class="p-8 border border-gray-800 rounded-2xl hover:border-blue-500 transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Customized Projects</h3>
+                        <p class="text-gray-400">Tailored astrophotography projects meeting your specific requirements and vision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 px-6 bg-gray-900">
+            <div class="container mx-auto max-w-4xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">Let's Connect</h2>
+                <p class="text-xl text-gray-400 mb-12">Ready to explore the cosmos together? Reach out to discuss your project.</p>
+                <a href="mailto:graeme@graemephillips.info" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 transform">
+                    Contact Me
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-12 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">&copy; 2024 Graeme Phillips. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

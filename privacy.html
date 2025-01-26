@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Graeme Phillips Astrophotography</title>
+    <meta name="description" content="Privacy Policy for Graeme Phillips Astrophotography website.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-black text-gray-100 font-sans antialiased">
+    <header class="fixed w-full bg-black/90 backdrop-blur-md z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold tracking-tighter">GP</a>
+                <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                    </svg>
+                </button>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-blue-400 transition-colors duration-300">About</a>
+                    <a href="#work" class="hover:text-blue-400 transition-colors duration-300">Work</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-24 pb-12 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-12 text-center">Privacy Policy</h1>
+            
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">Introduction</h2>
+                <p class="text-gray-300 mb-4">This Privacy Policy describes how Graeme Phillips Astrophotography ("we," "our," or "us") collects, uses, and protects your personal information when you visit our website. By using our website, you agree to the terms of this Privacy Policy.</p>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">Information We Collect</h2>
+                <p class="text-gray-300 mb-4">We collect information that you provide directly to us, including:</p>
+                <ul class="list-disc list-inside text-gray-300 mb-4">
+                    <li>Name and contact information</li>
+                    <li>Email address</li>
+                    <li>Messages you send through our contact form</li>
+                    <li>Information about your device and browser</li>
+                </ul>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">How We Use Your Information</h2>
+                <p class="text-gray-300 mb-4">We use the collected information to:</p>
+                <ul class="list-disc list-inside text-gray-300 mb-4">
+                    <li>Respond to your inquiries</li>
+                    <li>Process your requests</li>
+                    <li>Improve our website and services</li>
+                    <li>Send you updates and marketing communications (with your consent)</li>
+                </ul>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">Cookie Policy</h2>
+                <p class="text-gray-300 mb-4">Our website uses cookies to enhance your browsing experience. These cookies may collect information about your browsing habits and preferences. You can control cookie settings through your browser preferences.</p>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl font-bold mb-4">Contact Information</h2>
+                <p class="text-gray-300 mb-4">If you have any questions about this Privacy Policy, please contact us at:</p>
+                <div class="bg-gray-800/50 p-6 rounded-lg">
+                    <p class="text-gray-300">Email: privacy@graemephillips.info</p>
+                    <p class="text-gray-300">Last updated: February 2024</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-black py-12 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">&copy; 2024 Graeme Phillips. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors duration-300">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
